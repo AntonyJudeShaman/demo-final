@@ -39,7 +39,7 @@ import Particles from "@/components/particles"
 //   }
 // }
 
-export default async function IndexPage() {
+export default function IndexPage() {
   // const stars = await getGitHubStars()
 
   return (
