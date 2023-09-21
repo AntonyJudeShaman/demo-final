@@ -1,10 +1,13 @@
+
 import { Metadata } from "next"
 import Link from "next/link"
-
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import { UserAuthForm } from "@/components/user-auth-form"
+import { motion } from "framer-motion"
+import logo from "@/components/logo.png"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Login",
@@ -13,6 +16,11 @@ export const metadata: Metadata = {
 
 export default function LoginPage() {
   return (
+  //   <motion.div
+  //       initial={{ x: 0, opacity: 0 }}
+  //       animate={{ x: 0, opacity: 1 }}
+  //       transition={{ duration: 1, delay:0.25 }}
+  //  > 
     <div className="container flex h-screen w-screen flex-col items-center justify-center">
       <Link
         href="/"
@@ -28,7 +36,8 @@ export default function LoginPage() {
       </Link>
       <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
         <div className="flex flex-col space-y-2 text-center">
-          <Icons.logo className="mx-auto h-6 w-6" />
+          {/* <Icons.logo className="mx-auto h-6 w-6" /> */}
+          <Image src={logo} alt="Logo" className="mx-auto h-20 w-20 -mb-5"/>
           <h1 className="text-2xl font-semibold tracking-tight">
             Welcome back
           </h1>

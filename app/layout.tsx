@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@/components/analytics"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
+import Particles from "@/components/particles"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -39,11 +40,11 @@ export const metadata = {
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "AJS",
+      url: "https://portfolio-nu-six-46.vercel.app",
     },
   ],
-  creator: "shadcn",
+  creator: "AJS",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
@@ -60,8 +61,8 @@ export const metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/og.jpg`],
-    creator: "@shadcn",
+    images: [`${siteConfig.url}/logo.png`],
+    creator: "@AJS",
   },
   icons: {
     icon: "/favicon.ico",
@@ -86,6 +87,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {children}
           <Analytics />
           <Toaster />
+          <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={100}
+        />
           <TailwindIndicator />
         </ThemeProvider>
       </body>

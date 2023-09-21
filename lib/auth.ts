@@ -1,7 +1,7 @@
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
 import { NextAuthOptions } from "next-auth"
 import EmailProvider from "next-auth/providers/email"
-import GitHubProvider from "next-auth/providers/github"
+import GoogleProvider from 'next-auth/providers/google';
 import { Client } from "postmark"
 
 import { env } from "@/env.mjs"
@@ -19,12 +19,12 @@ export const authOptions: NextAuthOptions = {
     strategy: "jwt",
   },
   pages: {
-    signIn: "/login",
+    signIn: "/register",
   },
   providers: [
-    GitHubProvider({
-      clientId: env.GITHUB_CLIENT_ID,
-      clientSecret: env.GITHUB_CLIENT_SECRET,
+    GoogleProvider({
+      clientId: env.GOOGLE_CLIENT_ID, 
+      clientSecret: env.GOOGLE_CLIENT_SECRET, 
     }),
     EmailProvider({
       from: env.SMTP_FROM,
@@ -72,34 +72,40 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async session({ token, session }) {
       if (token) {
-        session.user.id = token.id
-        session.user.name = token.name
-        session.user.email = token.email
-        session.user.image = token.picture
+        session.user.id = token.id;
+        session.user.name = token.name;
+        session.user.email = token.email;
+        session.user.image = token.picture;
+        session.user.phone = token.phone; // Add phone to the session
+        session.user.age = token.age; // Add age to the session
+        session.user.gender = token.gender; // Add gender to the session
       }
-
-      return session
+      return session;
     },
     async jwt({ token, user }) {
       const dbUser = await db.user.findFirst({
         where: {
           email: token.email,
         },
-      })
-
+      });
+  
       if (!dbUser) {
         if (user) {
-          token.id = user?.id
+          token.id = user?.id;
         }
-        return token
+        return token;
       }
-
+  
       return {
         id: dbUser.id,
         name: dbUser.name,
         email: dbUser.email,
         picture: dbUser.image,
-      }
+        phone: dbUser.phone, // Add phone to the token
+        age: dbUser.age, // Add age to the token
+        gender: dbUser.gender, // Add gender to the token
+      };
     },
   },
+  
 }

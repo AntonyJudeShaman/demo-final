@@ -50,7 +50,7 @@ export function Editor({ post }: EditorProps) {
         onReady() {
           ref.current = editor
         },
-        placeholder: "Type here to write your post...",
+        placeholder: "Type here to write your event...",
         inlineToolbar: true,
         data: body.content,
         tools: {
@@ -104,7 +104,7 @@ export function Editor({ post }: EditorProps) {
     if (!response?.ok) {
       return toast({
         title: "Something went wrong.",
-        description: "Your post was not saved. Please try again.",
+        description: "Your event was not saved. Please try again.",
         variant: "destructive",
       })
     }
@@ -112,7 +112,7 @@ export function Editor({ post }: EditorProps) {
     router.refresh()
 
     return toast({
-      description: "Your post has been saved.",
+      description: "Your event has been saved.",
     })
   }
 
@@ -150,7 +150,7 @@ export function Editor({ post }: EditorProps) {
             autoFocus
             id="title"
             defaultValue={post.title}
-            placeholder="Post title"
+            placeholder="Event title"
             className="w-full resize-none appearance-none overflow-hidden bg-transparent text-5xl font-bold focus:outline-none"
             {...register("title")}
           />
