@@ -109,7 +109,7 @@ export function UserAgeForm({ user, className, ...props }: UserNameFormProps) {
       onSubmit={handleSubmit(onSubmit)}
       {...props}
     >
-      <div className="md:w-1/2 xs:1/2">
+      <div className="xs:1/2 md:w-1/2">
         <Card className="float-center">
           <CardHeader>
             <CardTitle>Age Update</CardTitle>

@@ -149,8 +149,8 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
       {...props}
     >
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-[600px] mb-4 md:mb-0">
-          <Card className="max-w-[600px] mr-8 pb-2 pt-3">
+        <div className="mb-4 md:mb-0 md:w-[600px]">
+          <Card className="mr-8 max-w-[600px] pb-2 pt-3">
             <CardHeader>
               <CardTitle>Your Name</CardTitle>
               <CardDescription>
@@ -193,7 +193,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
 
         <div className="md:w-1/2 ">
           <Card className="float-right ">
-            <div className="grid md:grid-cols-2  grid-cols-3  gap-4">
+            <div className="grid grid-cols-3  gap-4  md:grid-cols-2">
               <div>
                 <CardHeader>
                   <CardTitle>Profile Image</CardTitle>
@@ -202,7 +202,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid gap-1 w-[250px]">
+                  <div className="grid w-[250px] gap-1">
                     <Label className="sr-only" htmlFor="image">
                       Image
                     </Label>
@@ -233,10 +233,10 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
                   </button>
                 </CardFooter>
               </div>
-              <div className="flex justify-center md:items-center md:mt-0 mt-6">
+              <div className="mt-6 flex justify-center md:mt-0 md:items-center">
                 <UserAvatar
                   user={{ image: img || user?.image || null }}
-                  className="h-28 w-28 md:h-48 md:w-48 border-2 border-purple-400"
+                  className="h-28 w-28 border-2 border-purple-400 md:h-48 md:w-48"
                 />
               </div>
             </div>
@@ -273,8 +273,8 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
       <br />
 
       {/* Section for Age */}
-      <div className="flex md:flex-row flex-col">
-        <div className="md:w-1/2 mb-4 md:mb-0 md:mr-8">
+      <div className="flex flex-col md:flex-row">
+        <div className="mb-4 md:mb-0 md:mr-8 md:w-1/2">
           <Card className="max-w-[600px]">
             <CardHeader>
               <CardTitle>Your Age</CardTitle>
@@ -315,7 +315,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
           </Card>
         </div>
 
-        <div className="md:w-1/2 mb-4 md:mb-0">
+        <div className="mb-4 md:mb-0 md:w-1/2">
           <Card className="max-w-[600px]">
             <CardHeader>
               <CardTitle>Your Phone</CardTitle>

@@ -21,11 +21,11 @@ export default function RegisterPage() {
     >
       {" "}
       <div className="container grid h-screen w-screen flex-col items-center justify-center lg:max-w-none lg:grid-cols-2 lg:px-0">
-        <div className="hidden lg:flex  lg:items-center lg:h-full lg:bg-cover lg:bg-center lg:w-full lg:order-first lg:absolute lg:inset-0">
+        <div className="hidden lg:absolute  lg:inset-0 lg:order-first lg:flex lg:h-full lg:w-full lg:items-center lg:bg-cover lg:bg-center">
           <Image
             src={bg}
             alt="Background"
-            className="object-cover w-1/2 h-full"
+            className="h-full w-1/2 object-cover"
             style={{
               filter: "contrast(180%) brightness(80%)", // Adjust the values as needed
             }}
@@ -36,7 +36,7 @@ export default function RegisterPage() {
           href="/login"
           className={cn(
             buttonVariants({ variant: "default" }),
-            "absolute right-4 top-4 md:right-8 md:top-8 border border-zinc-100 bg-gradient-to-r from-purple-400/40 to-purple-700/80  "
+            "absolute right-4 top-4 border border-zinc-100 bg-gradient-to-r from-purple-400/40 to-purple-700/80 md:right-8 md:top-8  "
           )}
         >
           Login
@@ -46,7 +46,7 @@ export default function RegisterPage() {
           href="/"
           className={cn(
             buttonVariants({ variant: "ghost" }),
-            "absolute left-4 top-4 hover:bg-blue-950  z-20 md:top-8 "
+            "absolute left-4 top-4 z-20  hover:bg-blue-950 md:top-8 "
           )}
         >
           <>
@@ -66,11 +66,11 @@ export default function RegisterPage() {
               </p>
             </div>
             <UserAuthForm className="z-40" />
-            <p className="px-8 text-center text-sm z-40 text-muted-foreground">
+            <p className="z-40 px-8 text-center text-sm text-muted-foreground">
               By clicking continue, you agree to our{" "}
               <Link
                 href="/terms"
-                className="hover:text-brand font-heading z-40 underline underline-offset-4"
+                className="hover:text-brand z-40 font-heading underline underline-offset-4"
               >
                 Terms of Service
               </Link>{" "}

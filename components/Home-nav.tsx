@@ -29,9 +29,9 @@ const Nav = () => {
       initial={{ x: 0, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 1, delay: 0.25 }}
-      className="flex flex-col items-center p-8 lg:justify-center gap-y-4 fixed h-max bottom-0 mt-auto lg:left-[2rem] z-50 top-0 w-full lg:w-16 lg:max-w-md lg:h-screen"
+      className="fixed inset-y-0 z-50 mt-auto flex h-max w-full flex-col items-center gap-y-4 p-8 lg:left-[2rem] lg:h-screen lg:w-16 lg:max-w-md lg:justify-center"
     >
-      <div className="flex lg:flex-col gap-8 text-white bg-black border border-zinc-50 p-4 justify-center items-center text-2xl rounded-full">
+      <div className="flex items-center justify-center gap-8 rounded-full border border-zinc-50 bg-black p-4 text-2xl text-white lg:flex-col">
         {links.map((link, index) => {
           return (
             <Link
@@ -39,15 +39,15 @@ const Nav = () => {
               key={index}
               className={`${
                 link.path === pathname && "text-accent"
-              } items-center hover:text-accent transition-all duration-300 flex group`}
+              } group flex items-center transition-all duration-300 hover:text-accent`}
             >
               <div className="absolute left-20 hidden xl:group-hover:flex ">
-                <div className="bg-white text-primary text-[12px] p-[0.5rem] rounded-[0.5rem] relative leading-none capitalize">
+                <div className="relative rounded-[0.5rem] bg-white p-[0.5rem] text-[12px] capitalize leading-none text-primary">
                   {link.name}
                 </div>
-                <div className="top-1 border-solid border-r-white border-r-8 border-y-transparent border-y-8 border-l-0 absolute -left-1"></div>
+                <div className="absolute -left-1 top-1 border-y-8 border-l-0 border-r-8 border-solid border-y-transparent border-r-white"></div>
               </div>
-              <div className="hover:text-green-300 text-blue-400">
+              <div className="text-blue-400 hover:text-green-300">
                 {link.icon}
               </div>
             </Link>

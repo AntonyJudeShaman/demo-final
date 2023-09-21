@@ -17,7 +17,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer className={cn(className)}>
       <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
-        <div className="flex flex-col items-center gap-4 px-8 space-x-5 md:flex-row md:gap-2 md:px-0">
+        <div className="flex flex-col items-center gap-4 space-x-5 px-8 md:flex-row md:gap-2 md:px-0">
           <Tilt>
             <Image src={logo} className="w-20" alt="Jude" />
           </Tilt>
@@ -25,7 +25,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             &copy; {new Date().getFullYear()} {siteConfig.name}
           </p>
         </div>
-        <div className="flex flex-row space-x-4 items-center">
+        <div className="flex flex-row items-center space-x-4">
           <Link href="https://github.com/AntonyJudeShaman" target="_blank">
             <Button variant="ghost" className="h-8 w-8 px-1">
               <Icons.gitHub className="hover:text-blue-500" />
@@ -42,7 +42,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           >
             <Button
               variant="ghost"
-              className="h-8 w-8 px-1 mr-0 xl:mr-16 2xl:mr-16"
+              className="mr-0 h-8 w-8 px-1 xl:mr-16 2xl:mr-16"
             >
               <Icons.linkedin className="hover:text-blue-500" />
             </Button>
