@@ -76,9 +76,6 @@ export const authOptions: NextAuthOptions = {
         session.user.name = token.name;
         session.user.email = token.email;
         session.user.image = token.picture;
-        session.user.phone = token.phone; // Add phone to the session
-        session.user.age = token.age; // Add age to the session
-        session.user.gender = token.gender; // Add gender to the session
       }
       return session;
     },
@@ -101,9 +98,6 @@ export const authOptions: NextAuthOptions = {
         name: dbUser.name,
         email: dbUser.email,
         picture: dbUser.image,
-        phone: dbUser.phone, // Add phone to the token
-        age: dbUser.age, // Add age to the token
-        gender: dbUser.gender, // Add gender to the token
       };
     },
   },
