@@ -25,20 +25,26 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             &copy; {new Date().getFullYear()} {siteConfig.name}
           </p>
         </div>
-        <div className="flex flex-row space-x-4 items-center" >
+        <div className="flex flex-row space-x-4 items-center">
           <Link href="https://github.com/AntonyJudeShaman" target="_blank">
             <Button variant="ghost" className="h-8 w-8 px-1">
-              <Icons.gitHub className="hover:text-blue-500"/>
+              <Icons.gitHub className="hover:text-blue-500" />
             </Button>
           </Link>
           <Link href="https://instagram.com/stark-shaman" target="_blank">
             <Button variant="ghost" className="h-8 w-8 px-1">
-              <Icons.insta className="hover:text-blue-500"/>
+              <Icons.insta className="hover:text-blue-500" />
             </Button>
           </Link>
-          <Link href="https://www.linkedin.com/in/antony-jude-shaman/" target="_blank">
-            <Button variant="ghost" className="h-8 w-8 px-1 mr-0 xl:mr-16 2xl:mr-16">
-              <Icons.linkedin className="hover:text-blue-500"/>
+          <Link
+            href="https://www.linkedin.com/in/antony-jude-shaman/"
+            target="_blank"
+          >
+            <Button
+              variant="ghost"
+              className="h-8 w-8 px-1 mr-0 xl:mr-16 2xl:mr-16"
+            >
+              <Icons.linkedin className="hover:text-blue-500" />
             </Button>
           </Link>
 

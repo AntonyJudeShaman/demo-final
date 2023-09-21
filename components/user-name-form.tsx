@@ -51,7 +51,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
       id: user?.id || "",
       name: user?.name || "",
       email: user?.email || "",
-      age: user?.age || "", 
+      age: user?.age || "",
       phone: user?.phone || "",
       gender: user?.gender || "",
     },
@@ -61,7 +61,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
   const [isSavingPhone, setIsSavingPhone] = React.useState<boolean>(false)
   const [isSavingGender, setIsSavingGender] = React.useState<boolean>(false)
   const [isSavingAge, setIsSavingAge] = React.useState<boolean>(false)
-  
+
   // State to store the image file
   const [imageFile, setImageFile] = useState<File | null>(null)
 
@@ -69,7 +69,8 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
   const [imageURL, setImageURL] = useState<string | null>(null)
 
   // Get the image URL from localStorage if available
-  const img = typeof window !== 'undefined' ? localStorage.getItem("imageURL") : null;
+  const img =
+    typeof window !== "undefined" ? localStorage.getItem("imageURL") : null
 
   const handleImageUpload = async (file: File) => {
     setIsSavingImage(true)
@@ -109,7 +110,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: data.name,  
+          name: data.name,
           age: data.age,
           phone: data.phone,
           gender: data.gender,
@@ -365,11 +366,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
             <Label className="sr-only" htmlFor="gender">
               Gender
             </Label>
-            <Input
-              id="gender"
-              className="w-[400px]"
-              {...register("gender")}
-            />
+            <Input id="gender" className="w-[400px]" {...register("gender")} />
             {errors?.gender && (
               <p className="px-1 text-xs text-red-600">
                 {errors.gender.message}

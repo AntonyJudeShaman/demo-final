@@ -6,9 +6,9 @@ import { siteConfig } from "@/config/site"
 import { absoluteUrl, cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@/components/analytics"
+import Particles from "@/components/particles"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
-import Particles from "@/components/particles"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -88,9 +88,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
           <Toaster />
           <Particles
-          className="absolute inset-0 -z-10 animate-fade-in"
-          quantity={100}
-        />
+            className="absolute inset-0 -z-10 animate-fade-in"
+            quantity={100}
+          />
           <TailwindIndicator />
         </ThemeProvider>
       </body>
