@@ -1,6 +1,5 @@
 import Link from "next/link"
-import { useRouter } from "next/navigation" // Change from "next/navigation"
-import { motion } from "framer-motion"
+import { useRouter } from "next/navigation"
 import {
   HiEnvelope,
   HiHome,
@@ -22,12 +21,7 @@ const Nav = () => {
   const router = useRouter()
 
   return (
-    <motion.nav
-      initial={{ x: 0, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1, delay: 0.25 }}
-      className="fixed inset-y-0 z-50 mt-auto flex h-max w-full flex-col items-center gap-y-4 p-8 lg:left-[2rem] lg:h-screen lg:w-16 lg:max-w-md lg:justify-center"
-    >
+    
       <div className="flex items-center justify-center gap-8 rounded-full border border-zinc-50 bg-black p-4 text-2xl text-white lg:flex-col">
         {links.map((link, index) => {
           return (
@@ -51,7 +45,6 @@ const Nav = () => {
           )
         })}
       </div>
-    </motion.nav>
   )
 }
 
