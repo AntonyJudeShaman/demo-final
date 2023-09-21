@@ -106,10 +106,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: data.name,
-          age: data.age,
-          phone: data.phone,
-          gender: data.gender,
+          name: data.name
         }),
       })
 
