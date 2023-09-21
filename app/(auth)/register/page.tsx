@@ -9,10 +9,7 @@ import Image from "next/image"
 import logo from "@/components/logo.png"
 import { motion } from "framer-motion"
 
-export const metadata = {
-  title: "Create an account",
-  description: "Create an account to get started.",
-}
+
 
 export default function RegisterPage() {
   return (
