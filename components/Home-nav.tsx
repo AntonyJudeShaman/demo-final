@@ -20,7 +20,6 @@ const links = [
 
 const Nav = () => {
   const router = useRouter()
-  const pathname = router.pathname
 
   return (
     <motion.nav
@@ -35,7 +34,7 @@ const Nav = () => {
             <Link href={link.path} key={index}>
               <a
                 className={`${
-                  link.path === pathname ? "text-accent" : "text-white" // Add else condition to set text to white
+                  link.path ? "text-accent" : "text-white" // Add else condition to set text to white
                 } group flex items-center transition-all duration-300 hover:text-accent`}
               >
                 <div className="absolute left-20 hidden xl:group-hover:flex">
