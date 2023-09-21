@@ -22,7 +22,7 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
     <DropdownMenu>
       <DropdownMenuTrigger>
         <UserAvatar
-          user={{id: user.id || null, name: user.name || null, image: user.image || null }}
+          user={{  name: user.name || null, image: user.image || null, id: user.id || null, email: user.email || null }}
           className="h-8 w-8"
         />
       </DropdownMenuTrigger>

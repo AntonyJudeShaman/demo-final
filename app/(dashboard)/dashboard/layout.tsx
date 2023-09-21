@@ -27,6 +27,7 @@ export default async function DashboardLayout({
           <MainNav items={dashboardConfig.mainNav} />
           <UserAccountNav
             user={{
+              id: user.id,
               name: user.name,
               image: user.image,
               email: user.email,
