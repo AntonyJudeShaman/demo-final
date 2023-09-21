@@ -1,4 +1,3 @@
-"use client"
 
 import { MouseEventHandler, PropsWithChildren } from "react"
 import Image from "next/image"
@@ -44,11 +43,7 @@ export default async function IndexPage() {
   // const stars = await getGitHubStars()
 
   return (
-    <motion.div
-      initial={{ x: 0, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1, delay: 0.25 }}
-    >
+   
       <div className="">
         <Nav />
         <section
@@ -237,6 +232,5 @@ export default async function IndexPage() {
         </div>
       </section> */}
       </div>
-    </motion.div>
   )
 }
