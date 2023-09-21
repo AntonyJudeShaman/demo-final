@@ -28,12 +28,11 @@ import { Icons } from "@/components/icons"
 import { UserAvatar } from "@/components/user-avatar"
 
 import { firebaseApp } from "./firebase"
-import { UserAgeForm } from "./user-age-form"
 
 interface UserNameFormProps extends React.HTMLAttributes<HTMLFormElement> {
   user: Pick<
     User,
-    "id" | "image" | "email" | "name" | "age" | "gender" | "phone"
+    "id" | "email" | "name" 
   >
 }
 
@@ -51,9 +50,6 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
       id: user?.id || "",
       name: user?.name || "",
       email: user?.email || "",
-      age: user?.age || "",
-      phone: user?.phone || "",
-      gender: user?.gender || "",
     },
   })
   const [isSaving, setIsSaving] = React.useState<boolean>(false)
@@ -273,7 +269,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
       <br />
 
       {/* Section for Age */}
-      <div className="flex flex-col md:flex-row">
+      {/* <div className="flex flex-col md:flex-row">
         <div className="mb-4 md:mb-0 md:mr-8 md:w-1/2">
           <Card className="max-w-[600px]">
             <CardHeader>
@@ -356,7 +352,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
       </div>
       <br />
       {/* Section for Gender */}
-      <Card className="">
+      {/* <Card className="">
         <CardHeader>
           <CardTitle>Your Gender</CardTitle>
           <CardDescription>Please enter your gender.</CardDescription>
@@ -387,7 +383,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
           </button>
         </CardFooter>
       </Card>
-      <br />
+      <br />  */}
     </form>
   )
 }
