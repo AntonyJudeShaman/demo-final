@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { useRouter } from "next/router" // Change from "next/navigation"
+import { useRouter } from "next/navigation" // Change from "next/navigation"
 import { motion } from "framer-motion"
 import {
   HiEnvelope,
