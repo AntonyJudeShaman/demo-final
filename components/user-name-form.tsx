@@ -32,7 +32,7 @@ import { firebaseApp } from "./firebase"
 interface UserNameFormProps extends React.HTMLAttributes<HTMLFormElement> {
   user: Pick<
     User,
-    "id" | "email" | "name" 
+    "id" | "email" | "name" | "image"
   >
 }
 
@@ -204,12 +204,13 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
                       type="file"
                       accept="image/*"
                       onChange={(e) => {
-                        const file = e.target.files[0]
+                        const file = e.target.files?.[0]; // Use optional chaining (?.) to handle null/undefined
                         if (file) {
-                          setImageFile(file)
-                          handleImageUpload(file)
+                          setImageFile(file);
+                          handleImageUpload(file);
                         }
                       }}
+                      
                     />
                   </div>
                 </CardContent>
@@ -228,7 +229,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
               </div>
               <div className="mt-6 flex justify-center md:mt-0 md:items-center">
                 <UserAvatar
-                  user={{ image: img || user?.image || null }}
+                  user={{ name: user.name || null, image: img || user?.image || null }}
                   className="h-28 w-28 border-2 border-purple-400 md:h-48 md:w-48"
                 />
               </div>

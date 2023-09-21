@@ -4,8 +4,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Icons } from "@/components/icons";
 
 interface UserAvatarProps extends AvatarProps {
-  user: Pick<User, "image" | "name" | "id">;
+  user: Pick<User, "image" | "name" >; // Include email
 }
+
 
 export function UserAvatar({ user, ...props }: UserAvatarProps) {
   const imageURLFromLocalStorage = localStorage.getItem("imageURL");
