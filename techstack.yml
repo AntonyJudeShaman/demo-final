@@ -1,11 +1,12 @@
 repo_name: AntonyJudeShaman/demo-final
 report_id: 17df62f047b99a01ed5c971475316830
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-12T13:21:49+00:00'
+timestamp: '2024-01-05T08:25:44+00:00'
 requested_by: AntonyJudeShaman
 provider: github
 branch: main
-detected_tools_count: 47
+detected_tools_count: 48
 tools:
 - name: CSS 3
   description: The latest evolution of the Cascading Style Sheets language
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final
   detection_source: Repo Metadata
 - name: SQL
   description: It is a domain-specific language used in programming
@@ -34,6 +37,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/prisma/migrations/20221021182747_init/migration.sql
   detection_source: prisma/migrations/20221021182747_init/migration.sql
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -46,6 +50,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final
   detection_source: Repo Metadata
 - name: Autoprefixer
   description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
@@ -55,6 +60,7 @@ tools:
   category: Languages & Frameworks
   sub_category: CSS Pre-processors / Extensions
   image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -80,6 +86,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -92,6 +99,7 @@ tools:
   category: Languages & Frameworks
   sub_category: CSS Pre-processors / Extensions
   image_url: https://img.stackshare.io/service/3339/rlFcjEdI.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -118,6 +126,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Front-End Frameworks
   image_url: https://img.stackshare.io/service/8158/default_660b7c41c3ba489cb581eec89c04655404258c19.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -129,6 +138,7 @@ tools:
   category: Application Hosting
   sub_category: Realtime Backend / API
   image_url: https://img.stackshare.io/service/116/cZLxNFZS.jpg
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:43:25.000000000 Z
@@ -155,6 +165,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -166,6 +177,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final
   detection_source: Repo Metadata
 - name: Prettier
   description: 'Prettier is an opinionated code formatter. '
@@ -189,6 +201,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -200,6 +213,7 @@ tools:
   category: Communications
   sub_category: Transactional Email
   image_url: https://img.stackshare.io/service/45/default_e14042211227a4ae0040d034737714ba677b5a57.jpg
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -211,6 +225,7 @@ tools:
   category: Payments
   sub_category: Payment Services
   image_url: https://img.stackshare.io/service/97/eW6tXeq3.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -222,6 +237,7 @@ tools:
   category: Communications
   sub_category: Transactional Email
   image_url: https://img.stackshare.io/service/2862/qr2-jCLr.jpg
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -234,6 +250,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final
   detection_source: Repo Metadata
 - name: Vercel AI SDK
   description: An interoperable, streaming-enabled, edge-ready software development
@@ -255,6 +272,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/48521/default_eea961e4c374e68a1c7eb5bbc9e4a39920890342.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -267,6 +285,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/10865/default_5551fb8853689f607a2bc0d5a09355d5a3d52bf0.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -276,6 +295,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/48327/default_e1e547104832f8e187369b19e928e17a8be5020b.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:51:50.000000000 Z
@@ -284,6 +304,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/9527/5502029.jpeg
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:30:01.000000000 Z
@@ -426,6 +447,20 @@ tools:
   detection_source: package.json
   last_updated_by: AntonyJudeShaman
   last_updated_on: 2023-09-21 15:51:50.000000000 Z
+- name: husky
+  description: Prevents bad commit or push
+  package_url: https://www.npmjs.com/husky
+  version: 8.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15831/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/AntonyJudeShaman/demo-final/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: AntonyJudeShaman
+  last_updated_on: 2023-09-21 15:30:01.000000000 Z
 - name: next-auth
   description: Authentication for Next.js
   package_url: https://www.npmjs.com/next-auth
